@@ -1,0 +1,264 @@
+button {
+    background-color: #FFFFFF; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #e7e7e7;
+}
+
+html{
+    background-color: darkgrey;
+}
+script{
+    color: white;
+}
+
+button:active {
+    background-color: #ececec; 
+}
+
+.row{
+    color: white;
+    font-family: "Bookman Old Style";
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+button.killMan{
+    background-color: black;
+    border: 8px double sandybrown;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+}
+button.show_pickaxe{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_miner{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_mana{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_armor{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_miner{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_miner_pickaxe{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button.show_boss{
+    color: white;
+    font-family: Harrington;
+    font-weight: bolder;
+    font-size: 20px;
+
+    background-color: black;
+
+    border: 15px double sandybrown;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mana-bar{
+    width: 300px;
+    height: 20px;
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+}
+#mana-bar::-webkit-progress-bar{
+    background: black;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+#mana-bar::-webkit-progress-value{
+    background: linear-gradient(blue,black);
+
+}
+.spells button{
+    background-color: black;
+    border: 3px solid saddlebrown;
+    color: white;
+    cursor: pointer;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+}
+
+#player-bar{
+    width: 300px;
+    height: 20px;
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+}
+#player-bar::-webkit-progress-bar{
+    background: black;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+#player-bar::-webkit-progress-value{
+    background: linear-gradient(green,black);
+
+}
+progress {
+    width: 300px;
+    height: 20px;
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+}
+progress::-webkit-progress-bar {
+    background: black;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+progress::-webkit-progress-value {
+
+    background: linear-gradient(red,black);
+
+}
+#header{
+    display: table;
+    margin-top: 50px;
+}
+#header2{
+    margin-top: -170px;
+    margin-left: 30px;
+}
+#header3{
+    margin-top:-60px;
+}
+#header4{
+    margin-top: -1000px;
+    margin-left: 500px;
+}
+#header5{
+    margin-top: -490px;
+    margin-left: -300px;
+}
+#boss2{
+    margin-top: -200px;
+}
+#boss3{
+    margin-top: -200px;
+
+}
+#boss4{
+    margin-top: -200px;
+
+}
+#boss5{
+    margin-top: -300px;
+
+}
+#boss6{
+    margin-top: -300px;
+
+}
+#boss7{
+    margin-top: -200px;
+
+}
+#boss8{
+    margin-top: -100px;
+
+}
+#boss9{
+    margin-top: -250px;
+
+}
+#boss10{
+    margin-top: -250px;
+
+}
+#boss11{
+    margin-top: -200px;
+}
+#boss12{
+    margin-top: -275px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="interface1.css" />
+  </head>
+  <div>
+    <script type="text/javascript" src="main1.js"></script>
+
+
+      <div class="row">
+      <div class="column">
+	Gold: <span class="gold"></span>
+    Enemies Killed: <span class="enemy"></span>
+	<span style="display:none" class="show_pickaxe">Sword Level: <span class="pickaxe"></span></span>
+	<span style="display:none" class="show_miner">Mercenaries: <span class="miner"></span></span>
+	<span style="display:none" class="show_miner_pickaxe">Mercenaries' Weapon Level: <span class="miner_pickaxe"></span> <span style="visibility:hidden" id="merc_max" class="show_miner_pickaxe_level">(MAX LEVEL)</span></span>
+    <span style="display:none" class="show_armor">Armor: <span class="armor"></span></span>
+    <span style="display:none" class="show_playerHP">Player HP: <span class="playerHP"></span>/9000.00</span>
+          <progress style="display: none" class="show_health" id="player-bar" value="9000" max="9000"></progress>
+    <span style="display:none" class="show_bossHP">Boss HP: <span class="bossHP"> </span> /<span class="bossTotalHP"></span></span>
+          <progress style="display: none" class="show_health" id="health-bar" value="1000" max="1000"></progress>
+    <span class="show_mana">Mana: <span class="mana"></span>/1000.00</span>
+          <progress style="display: none" class="show_mana" id="mana-bar" value="1000" max="1000"></progress>
+          <div id="x"></div>
+
+          <img class="show_boss1" style="display: none" id="header" src="Blue-dragon-ice-breath.gif" width="225" height="225">
+          <img class="show_boss2" style="display: none" id="boss2" src="Pegasus-knight-idle.gif" width="225" height="225">
+          <img class="show_boss3" style="display: none" id="boss3" src="Cerberus-fire-breath.gif" width="225" height="225">
+          <img class="show_boss4" style="display: none" id="boss4" src="Belial-idle.gif" width="225" height="225">
+          <img class="show_boss5" style="display: none" id="boss5" src="skeleton_axe.gif" width="225" height="225">
+          <img class="show_boss6" style="display: none" id="boss6" src="20200913_134453.gif" width="225" height="225">
+          <img class="show_boss7" style="display: none" id="boss7" src="monster7.gif" width="225" height="225">
+          <img class="show_boss8" style="display: none" id="boss8" src="monster8.gif" width="225" height="225">
+          <img class="show_boss9" style="display: none" id="boss9" src="monster9.gif" width="225" height="225">
+          <img class="show_boss10" style="display: none" id="boss10" src="Conch-idle.gif" width="225" height="225">
+          <img class="show_boss11" style="display: none" id="boss11" src="Chimaera-fire-breath.gif" width="225" height="225">
+          <img class="show_boss12" style="display: none" id="boss12" src="Dark_dragon_idle.gif" width="325" height="325">
+
+          <img style="visibility: hidden" id="header2" src="fire_ball.gif" width="225" height="225">
+          <img style="visibility: hidden" id="header5" src="frozen.png" width="225" height="225">
+
+          <div id="critMessage" style="visibility: hidden"><img style="visibility:hidden" id="header4" src="transparent-lightning-gif-5.gif" width="750" height="750"> Boss does critical damage </div>
+
+
+
+
+
+      </div>
+      <div class="column">
+	<button class= "killMan" onClick="mineGold(1)" title ="Kill Enemies"> <img src ="kill.png" alt ="Trulli" width="45" height="45"></button>
+	<button style="display:none" class="show_pickaxe" onClick="upgradePickaxe(1)"><img src="sword.png" alt="Trulli" width="45" height="45">&nbsp Upgrade Sword: $<span class="pickaxe_cost"></span></button>
+	<button style="display:none" class="show_miner" onClick="hireMiner(1)"> <img src ="merc.png" alt ="Trulli" width="45" height="45"> &nbsp Hire Mercenaries: $<span class="miner_cost"></span></button>
+	<button style="display:none" class="show_miner_pickaxe" onClick="upgradeMinerPickaxe(1)">Upgrade Mercenaries' Weapons: $<span class="miner_pickaxe_cost"></span></button>
+    <button style="display:none" class="show_armor" onClick="addArmor(1)"><img src ="shield.png" alt ="Trulli" width="45" height="45"> Buy Armor: $<span class="armor_cost"></span></button>
+    <button style="display:none"  class="show_boss" id="boss1" onClick="bossTime(1)"> <img src ="boss.png" alt ="Trulli" width="45" height="45"> &nbsp Fight the boss!!</button>
+    <button style="display:none" class="show_mana" onClick="magicTime(1)"><img src ="magic.png" alt =" Trulli" width="45" height="45"> &nbsp  Upgrade Magic! $<span class="magicUP1_cost"></span></button>
+          <div class="spells">
+    <button style="display:none" class="show_magic" onClick="fireMagic(1)" title ="-100 Mana" ><img src ="fireball.png" alt ="Trulli" width="35" height="35"></button>
+    <button style="display:none" class="show_heal" onClick="healMagic(1)" title ="-100 Mana"><img src ="heal.png" alt ="Trulli" width="35" height="35"><!--Heal--></button>
+              <img style="visibility: hidden" id="header3" src="healing.gif" width="250" height="250">
+
+              <button style="display:none" id = "countdown"  class="show_freeze" onClick="freezeHP(1)" title ="-100 Mana"><img src ="freeze.png" id = "freeze" alt ="Trulli" width="35" height="35"> </button>
+          </div>
+
+
+
+      </div>
+          <div class="spells description">
+    <span   style="display:none" class="show_magic"> Fireball: Big Damage </span>
+    <span   style="display:none" class="show_heal"> Heal: Recover your HP  </span>
+    <span   style="display:none" class="show_freeze"> Freeze: Freeze Boss for 5 seconds, cooldown 15 seconds </span>
+        </div>        
+    </div>
+  </div>
+  </body>
+</html>
